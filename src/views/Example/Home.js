@@ -29,7 +29,7 @@ class Home extends React.Component {
         return (
             <>
                 <div>
-                    Hello world from Homepage with Eric & Hoi Dan IT
+                    Hello world from Homepage 
                 </div>
                
                 <div>
