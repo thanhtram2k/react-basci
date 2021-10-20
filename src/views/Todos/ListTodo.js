@@ -16,12 +16,11 @@ class ListTodo extends React.Component{
     }
 
     addNewTodo = (todo) => {
-        //let currentListTodo = this.state.ListTodos;
-        //currentListTodo.push(todo);
+      
         
         this.setState({
             ListTodos: [...this.state.ListTodos, todo],
-            //ListTodos: currentListTodo
+           
         })
 
         toast.success("Wow so easy!")
@@ -41,17 +40,17 @@ class ListTodo extends React.Component{
         let{editTodo, ListTodos} = this.state
         let isEmptyObj = Object.keys(editTodo).length === 0
 
-        //save
+       
         if(isEmptyObj === false && editTodo.id === todo.id){
 
             let listTodosCopy = [...ListTodos]
 
             let objIndex = listTodosCopy.findIndex((item => item.id == todo.id))
 
-            //log object to console.
+           
             console.log("Before update: ", listTodosCopy[objIndex])
 
-            //Update object's name property
+           
             listTodosCopy[objIndex].title = editTodo.title
 
             this.setState({

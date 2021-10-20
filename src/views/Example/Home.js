@@ -1,51 +1,7 @@
-/* import React from "react";
-import logo from '../../assets/images/logo-cong-nghe.jpg'
-import {connect} from 'react-redux';
-import Color from "../HOC/Color";
-
-class Home extends React.Component{
-
-    render(){
-        console.log('>>> check props redux: ', this.props.dataRedux)
-        let listUsers = this.props.dataRedux;
-        return(
-            <>
-                <div>
-                    hello world form Homepage
-                </div>
-                <div>
-                     <img src={logo} style={{width: 'auto', height: '500px'}}/> 
-                </div>
-                 <div>
-                    {listUsers && listUsers.lenght > 0 &&
-                    listUsers.map((item, index) => {
-                        return(
-                            <div key={item.id}>
-                                {index + 1} - {item.name} <span>X</span>
-                            </div>
-                        )
-                    })
-                    }
-                </div> 
-            </>
-        )
-    }
-
-}
-
-const mapStateToProps = (state) => {
-  return{
-    dataRedux: state.users
-
-  } 
-
-}
-
-export default connect(mapStateToProps)(Color(Home));  */
 import React from "react";
 import { withRouter } from "react-router";
 import Color from "../HOC/Color";
-/* import logo from '../../assets/images/logoChannel.png'; */
+
 import { connect } from 'react-redux';
 
 class Home extends React.Component {
@@ -75,9 +31,7 @@ class Home extends React.Component {
                 <div>
                     Hello world from Homepage with Eric & Hoi Dan IT
                 </div>
-                <div>
-                   {/*  <img src={logo} style={{ width: '200px', height: '200px', marginTop: '20px' }} /> */}
-                </div>
+               
                 <div>
                     {listUsers && listUsers.length > 0 &&
 
@@ -99,7 +53,7 @@ class Home extends React.Component {
     }
 }
 
-// export default withRouter(Home);
+
 
 const mapStateToProps = (state) => {
     return {

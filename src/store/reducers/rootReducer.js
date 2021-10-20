@@ -1,20 +1,8 @@
-/* const initSate ={
-    users: [
-        {id: 1, name: 'Eric'},
-        {id: 2, name: 'Cong nghe web'},
-        {id: 3, name: 'Cong nghe web'}
-    ]
-}
-const rootReducer = (state = initSate, action) => {
-
-    return state;
-}
-export default rootReducer; */
 const initState = {
     users: [
         { id: 1, name: 'Eric' },
-        { id: 2, name: 'Hoi Dan IT' },
-        { id: 3, name: 'Hoi Dan IT voi ERIC' }
+        { id: 2, name: 'Cong nghe web' },
+        { id: 3, name: 'Eric with Cong nghe web' }
     ],
     posts: []
 }
